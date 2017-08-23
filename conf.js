@@ -13,7 +13,7 @@ exports.config = {
 
     //location of tests
     specs: [
-        'tests/google.js'
+        'tests/*.js'
     ],
 
     //browser capabilities
