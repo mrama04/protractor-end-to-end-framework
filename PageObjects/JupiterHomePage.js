@@ -1,11 +1,13 @@
 var JupiterHomePage = function () {
 
+    //Page Elements
     var homePageLink = element(by.linkText('Home'));
     var contactPageLink = element(by.linkText('Contact'));
     var shopPageLink = element(by.linkText('Shop'));
     var loginPageLink = element(by.linkText('Login'));
 
 
+    //Methods
     this.get = function(){
         browser.get("https://jupiter.cloud.planittesting.com");
     }

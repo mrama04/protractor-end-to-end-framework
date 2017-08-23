@@ -12,6 +12,7 @@ var JupiterContactPage = function () {
     var emailError = element(by.id('email-err'));
     var messageError = element(by.id('message-err'));
 
+    //Methods
     this.setForeName = function(name) {
         foreName.sendKeys(name);
     }
@@ -47,6 +48,18 @@ var JupiterContactPage = function () {
 
     this.getMessageError = function () {
         return messageError.getText();
+    }
+
+    this.isForeNameErrorPresent = function(){
+        return browser.isElementPresent(foreNameError);
+    }
+
+    this.isEmailErrorPresent = function () {
+        return browser.isElementPresent(emailError);
+    }
+
+    this.isMessagErrorPresent = function () {
+        return browser.isElementPresent(messageError);
     }
 };
 

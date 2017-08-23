@@ -12,9 +12,9 @@ exports.config = {
     chromeDriver: './bin/chromedriver.exe',
 
     //location of tests
-    specs: [
-        'tests/*.js'
-    ],
+    suites: {
+    ContactPageTests: 'tests/ContactPageTests.js'
+},
 
     //browser capabilities
     capabilities:{
