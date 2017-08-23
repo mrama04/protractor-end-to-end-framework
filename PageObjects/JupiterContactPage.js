@@ -11,7 +11,8 @@ var JupiterContactPage = function () {
     var foreNameError = element(by.id('forename-err'));
     var emailError = element(by.id('email-err'));
     var messageError = element(by.id('message-err'));
-
+    var telephoneError = element(by.id('telephone-err'));
+    var successMessage = element(by.css('.alert-success'));
     //Methods
     this.setForeName = function(name) {
         foreName.sendKeys(name);
@@ -50,6 +51,15 @@ var JupiterContactPage = function () {
         return messageError.getText();
     }
 
+    this.getTelephoneError = function () {
+        return telephoneError.getText();
+    }
+
+    this.getSuccessMessage = function () {
+        browser.wait(protractor.ExpectedConditions.visibilityOf(successMessage),20000);
+        return successMessage.getText();
+    }
+
     this.isForeNameErrorPresent = function(){
         return browser.isElementPresent(foreNameError);
     }
@@ -58,8 +68,12 @@ var JupiterContactPage = function () {
         return browser.isElementPresent(emailError);
     }
 
-    this.isMessagErrorPresent = function () {
+    this.isMessageErrorPresent = function () {
         return browser.isElementPresent(messageError);
+    }
+
+    this.isTelephoneErrorPresent = function () {
+        return browser.isElementPresent(telephoneError);
     }
 };
 
