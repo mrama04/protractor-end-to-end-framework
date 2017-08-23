@@ -1,7 +1,7 @@
 var jupiterHomePage = require('../PageObjects/JupiterHomePage.js');
 var jupiterContactPage = require('../PageObjects/JupiterContactPage.js');
 
-describe('Contact Page Test', function () {
+describe('Jupiter Contact Page Test', function () {
 
     beforeEach(function () {
         browser.ignoreSynchronization = true;
