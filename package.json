@@ -4,9 +4,10 @@
   "author": "Munikrishna Rama <mk.rama04@gmail.com>",
   "description":"An Example Protractor Project",
   "scripts": {
-    "AllTests": "node_modules/.bin/protractor conf.js --suite ContactPageTests,LoginDialogueTests",
+    "AllTests": "node_modules/.bin/protractor conf.js --suite ContactPageTests,LoginDialogueTests,ShopPageTests",
     "ContactPageTests": "node_modules/.bin/protractor conf.js --suite ContactPageTests",
-    "LoginDialogueTests": "node_modules/.bin/protractor conf.js --suite LoginDialogueTests"
+    "LoginDialogueTests": "node_modules/.bin/protractor conf.js --suite LoginDialogueTests",
+    "ShopPageTests": "node_modules/.bin/protractor conf.js --suite ShopPageTests"
   },
   "repository": {
     "type": "git",

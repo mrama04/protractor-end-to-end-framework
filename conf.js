@@ -14,7 +14,8 @@ exports.config = {
     //location of tests
     suites: {
     ContactPageTests: 'tests/ContactPageTests.js',
-    LoginDialogueTests: 'tests/LoginDialogueTests.js'
+    LoginDialogueTests: 'tests/LoginDialogueTests.js',
+    ShopPageTests: 'tests/ShopPageTests.js'
 },
 
     //browser capabilities
