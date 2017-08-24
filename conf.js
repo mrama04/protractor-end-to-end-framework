@@ -15,7 +15,8 @@ exports.config = {
     suites: {
     ContactPageTests: 'tests/ContactPageTests.js',
     LoginDialogueTests: 'tests/LoginDialogueTests.js',
-    ShopPageTests: 'tests/ShopPageTests.js'
+    ShopPageTests: 'tests/ShopPageTests.js',
+    CartPageTests: 'tests/CartPageTests.js'
 },
 
     //browser capabilities

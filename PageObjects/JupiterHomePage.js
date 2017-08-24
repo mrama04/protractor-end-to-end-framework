@@ -5,6 +5,8 @@ var JupiterHomePage = function () {
     var contactPageLink = element(by.linkText('Contact'));
     var shopPageLink = element(by.linkText('Shop'));
     var loginDialogueLink = element(by.linkText('Login'));
+    var cartPageLink = element(by.partialLinkText('Cart'));
+    var cartCount = cartPageLink.element(by.css('.cart-count'));
 
 
     //Methods
@@ -26,6 +28,14 @@ var JupiterHomePage = function () {
 
     this.navigateToShoppingPage = function () {
         shopPageLink.click()
+    }
+
+    this.navigateToCartPage = function () {
+        cartPageLink.click();
+    }
+
+    this.getCartCount = function () {
+        return cartCount.getText();
     }
 };
 
