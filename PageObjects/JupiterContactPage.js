@@ -13,6 +13,7 @@ var JupiterContactPage = function () {
     var messageError = element(by.id('message-err'));
     var telephoneError = element(by.id('telephone-err'));
     var successMessage = element(by.css('.alert-success'));
+
     //Methods
     this.setForeName = function(name) {
         foreName.sendKeys(name);

@@ -7,6 +7,7 @@ describe("Shop Page Tests", function () {
         browser.ignoreSynchronization = true;
         jupiterHomePage.get();
         jupiterHomePage.navigateToShoppingPage();
+
         expect(browser.getTitle()).toEqual("Jupiter Toys");
     })
 

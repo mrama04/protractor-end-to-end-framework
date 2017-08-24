@@ -45,7 +45,6 @@ describe('Jupiter Contact Page Test', function () {
         jupiterContactPage.setEmail('mk.rama04@gmail.com');
         jupiterContactPage.setTelephone('02020202');
         jupiterContactPage.setMessage("This is a sample message")
-
         jupiterContactPage.clickSubmit();
 
         expect(jupiterContactPage.getSuccessMessage()).toEqual("Thanks Munikrishna, we appreciate your feedback.");
